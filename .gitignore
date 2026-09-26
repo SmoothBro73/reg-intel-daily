@@ -1,3 +1,5 @@
 _tmp.wav
 *.onnx
 voices-*.bin
+*.pdf
+__pycache__/
