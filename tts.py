@@ -11,8 +11,8 @@ import re, sys, subprocess, numpy as np, soundfile as sf
 from kokoro_onnx import Kokoro
 
 VOICE, SPEED, SENTENCE_PAUSE, PARA_GAP = "am_eric", 1.05, 0.35, 0.6   # "Voice F", chosen 2026-09-26
-# Exact phonemes for words the engine gets wrong. OSFI = os-FEE (stress on second syllable).
-PHONEMES = {"OSFI's": "ɑːsfˈiːz", "OSFI": "ɑːsfˈiː"}
+# Exact phonemes for words the engine gets wrong. OSFI = OSS-FEE, equal stress on both syllables.
+PHONEMES = {"OSFI's": "ˈɑːsfˈiːz", "OSFI": "ˈɑːsfˈiː"}
 # Spelling substitutions. Reg has a HARD g (as in "girl").
 SUBS = [(r"\bReg Intel", "Regg Intel"), (r"\bTLAC\b", "Tee-lack"), (r"\bDORA\b", "Dora"),
         (r"\bMRAs\b", "M R A's"), (r"\bMRA\b", "M R A"), (r"\bFDIC\b", "F D I C"), (r"\bOCC\b", "O C C"),
