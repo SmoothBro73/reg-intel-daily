@@ -24,7 +24,7 @@ feed = f"""<?xml version="1.0" encoding="UTF-8"?>
     <title>Reg Intel Daily</title>
     <link>{BASE}/</link>
     <language>en-us</language>
-    <description>A weekday briefing on financial regulatory developments that matter to RBC.</description>
+    <description>A twice-weekly (Monday and Thursday) briefing on financial regulatory developments that matter to RBC.</description>
     <itunes:author>Reg Intel Daily</itunes:author>
     <itunes:image href="{BASE}/cover.jpg"/>
     <itunes:category text="Business"/>
